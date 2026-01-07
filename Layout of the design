@@ -1,0 +1,17 @@
+kunmath/
+├── include/
+│   └── kanmath/
+│       ├── kmath.h        
+│       ├── kscalar.h      
+│       ├── kvec2.h
+│       ├── kvec3.h
+│       └── kmat2.h
+│
+├── src/
+│   ├── kscalar.c
+│   ├── kvec2.c
+│   ├── kvec3.c
+│   └── kmat2.c
+│
+├── tests/
+│   └── test_vec2.c
