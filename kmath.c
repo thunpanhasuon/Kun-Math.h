@@ -90,4 +90,11 @@ double kfabs(double x) {
 double khypot(double x, double y) {
     return ksqrt(x*x + y*y); 
 } 
+bool kcheck_collision(Game_object* object1, Game_object* object2) {
+    bool collision_on_x = object1->pos.x + object1->size.x >= object2->pos.x &&
+                          object2->pos.x + object2->size.x >= object1->pos.x; 
+    bool collision_on_y = object1->pos.y + object1->size.y >= object2->pos.y &&
+                          object2->pos.y + object2->size.y >= object1->pos.y; 
+    return collision_on_x && collision_on_y; 
+}
 
