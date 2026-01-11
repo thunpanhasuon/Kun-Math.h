@@ -80,3 +80,10 @@ double ksqrt(double x) {
     }
     return g; 
 }
+double kfabs(double x) {
+    return x = (x < 0.0) ? -1.0 * x : x; 
+}
+double khypot(double x, double y) {
+    return ksqrt(x*x + y*y); 
+} 
+
