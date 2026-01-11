@@ -34,7 +34,7 @@ Useful for:
 
 ---
 
-## 📁 API Overview
+## API Overview
 
 ```c
 /* Trigonometric functions */
