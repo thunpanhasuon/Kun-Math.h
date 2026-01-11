@@ -4,6 +4,10 @@
 #include <errno.h>
 #include <math.h>
 
+typedef struct Vector2 {
+    double x, y; 
+} Vector2; 
+
 static const double cordic_angles[] = {
     0.7853981633974483,    
     0.4636476090008061,    
@@ -37,6 +41,8 @@ double ktan(double angle);
 double ksqrt(double x); 
 double kfabs(double x);
 double khypot(double x, double y); 
+
+bool kcheck_collision(Vector2 object1, Vector2 object2); 
 
 
 #endif 
