@@ -6,6 +6,7 @@ static void caluclate_cordic(double angle, double *cos, double* sin) {
     double theta = 0.0f;  
     
     for (int i = 0; i <  CORDIC_ITERATIONS; i++) {
+        /* try using marden cpu feature of mul */
         double pow2 = 1.0f / (1 << i); 
 
         if (theta < angle) {
