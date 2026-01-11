@@ -35,8 +35,8 @@ double ktan(double angle);
 
 /* Defining position, velocity, direction, and forces in 2D/3D space */
 double ksqrt(double x); 
-double fabs(double x);
-double hypot(double x, double y); 
+double kfabs(double x);
+double khypot(double x, double y); 
 
 
 #endif 
