@@ -72,7 +72,12 @@ double ktan(angle) {
     double t = (c == 0) ? 0 : S / C; 
     return t; 
 }
-
+double d2rad(double rad) {
+    return 180.0f/M_PI * rad; 
+}
+double rad2d(double dergee) {
+    return M_PI/180.0f * dergee; 
+}
 /* it not an accurate guess but it approximated pretty well */
 //
 double ksqrt(double x) {
