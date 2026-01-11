@@ -1,3 +1,0 @@
-This is an educational implementation of the CORDIC algorithm.
-Accuracy is limited by iteration count and angle normalization.
-The goal was to understand numerical rotation, not to replace libm.
