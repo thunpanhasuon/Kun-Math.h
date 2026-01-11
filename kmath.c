@@ -62,11 +62,14 @@ double ksin(double angle) {
 } 
 
 double kcos(angle) {
-    return ksin(M_PI /2 - angle); 
+    return ksin(angle + M_PI /2 - angle); 
 }
 
 double ktan(angle) { 
-    return ksin(angle) / kcos(angle); 
+    double s = ksin(angle); 
+    double c = kcos(angle);
+    double t = (c == 0) ? 0 : S / C; 
+    return t; 
 }
 
 /* it not an accurate guess but it approximated pretty well */
