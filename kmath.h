@@ -24,23 +24,19 @@ static const double cordic_angles[] = {
 
 #define CORDIC_K 0.6072529350088812561694
 #define CORDIC_ITERATIONS 15
-#define max(A, B) ((A) > (B) ? (A) : (B)) 
+#define max(A, B) ((A) > (B) ? (A) : (B))
 
 /* trigonometric function */
+/* Calculating angles for object rotation, aiming, and movement along curves */
 static void caluclate_cordic(double angle, double *cos, double* sin); 
 double ksin(double angle); 
 double kcos(double angle); 
 double ktan(double angle); 
 
-/* for calucalating area and valume */
-double log(double arg); 
-double ln(double arg); 
-double pow(double x, double y);
-double sqrt(double arg); 
+/* Defining position, velocity, direction, and forces in 2D/3D space */
+double ksqrt(double x); 
+double fabs(double x);
+double hypot(double x, double y); 
 
-/* hyperbolic function */
-double kshx(double x); 
-double kchx(double x); 
-double thx(double x); 
 
 #endif 
