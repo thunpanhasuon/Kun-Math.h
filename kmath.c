@@ -68,3 +68,15 @@ double kcos(angle) {
 double ktan(angle) { 
     return ksin(angle) / kcos(angle); 
 }
+
+/* it not an accurate guess but it approximated pretty well */
+//
+double ksqrt(double x) {
+    double g = x; 
+
+    int itera = 10; 
+    for (int i = 0; i < itera; i++) {
+        g = 0.5 * (g + x / g);
+    }
+    return g; 
+}
