@@ -3,10 +3,16 @@
 
 #include <errno.h>
 #include <math.h>
+#include <stdbool.h>
 
 typedef struct Vector2 {
     double x, y; 
 } Vector2; 
+
+typedef struct Game_object {
+    Vector2 pos; 
+    Vector2 size; 
+} Game_object; 
 
 static const double cordic_angles[] = {
     0.7853981633974483,    
@@ -42,7 +48,6 @@ double ksqrt(double x);
 double kfabs(double x);
 double khypot(double x, double y); 
 
-bool kcheck_collision(Vector2 object1, Vector2 object2); 
-
+bool kcheck_collision(Game_object* object1, Game_object* object2); 
 
 #endif 
