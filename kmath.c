@@ -78,6 +78,7 @@ double rad2d(double rad) {
 double d2rad(double dergee) {
     return M_PI/180.0f * dergee; 
 }
+
 /* it not an accurate guess but it approximated pretty well */
 //
 double ksqrt(double x) {
