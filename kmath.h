@@ -42,6 +42,12 @@ static void caluclate_cordic(double angle, double *cos, double* sin);
 double ksin(double angle); 
 double kcos(double angle); 
 double ktan(double angle); 
+double rad2d(double dergee) {
+    return M_PI/180.0f * dergee; 
+}
+double d2rad(double rad) {
+    return 180.0f/M_PI * rad; 
+}
 
 /* Defining position, velocity, direction, and forces in 2D/3D space */
 double ksqrt(double x); 
