@@ -1,4 +1,4 @@
-#include "../include/kunmath/kmath.h"
+#include "kmath.h"
 
 static void caluclate_cordic(double angle, double *cos, double* sin) {
     double x = CORDIC_K;  
